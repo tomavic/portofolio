@@ -1,0 +1,49 @@
+<nav
+  class="navbar navbar-expand fixed-top"
+  style="background-color: rgb(0, 0, 0, 0)"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.png" alt="Logo" width="64" />
+    </a>
+
+    <div class="navbar-collapse">
+      <ul id="myNavMenu" class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            data-menuanchor="home"
+            aria-current="page"
+            href="#"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-menuanchor="about" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-menuanchor="blog">Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-menuanchor="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main fullpage id="fullpage2" [options]="config" (ref)="getRef($event)">
+  <div class="section bg-intro" data-drop="down">
+    <app-intro></app-intro>
+  </div>
+  <div class="section bg-about" data-drop="down">
+    <app-about></app-about>
+  </div>
+  <div class="section bg-portfolio" data-drop="down">
+    <app-blog></app-blog>
+  </div>
+  <div class="section bg-contact">
+    <app-contact></app-contact>
+  </div>
+</main>

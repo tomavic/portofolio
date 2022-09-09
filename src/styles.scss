@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(~fullpage.js/dist/fullpage.min.css);
+
+.bubble {
+  position: absolute;
+  &.bubble-bottom {
+    top: 31%;
+    right: -5%;
+    z-index: 1;
+    width: 61%;
+    animation: in 4s linear 0s infinite normal;
+  }
+}
+
+@keyframes in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+nav {
+  &.navbar {
+    .nav-item {
+      .nav-link {
+        // max-width: 50px;
+        color: #333;
+        padding: 0 6px;
+
+        &:hover,
+        &:active {
+          color: #eaeaea;
+        }
+        &.active {
+          color: 0d0d0d;
+          text-decoration: underline;
+          text-underline-offset: 5px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // z-index: 1;
+}
+
+.particles-js {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+* {
+  font-family: "Cascadia Code", sans-serif;
+  text-underline-offset: 5px;
+}
+
+.bg-intro {
+  color: #fff;
+
+  background-image: linear-gradient(75deg, #820000 0%, #e60000 100%);
+}
+
+.bg-about {
+  background-image: linear-gradient(90deg, #ebebeb 0%, #fff 100%);
+  color: #0d0d0d;
+}
+
+.bg-portfolio {
+  background-image: linear-gradient(45deg, #005ea5 0%, #7cc6ff 100%);
+  color: #fff;
+}
+
+.bg-contact {
+  color: #0d0d0d;
+
+  background-image: linear-gradient(135deg, #b3b3b3 0%, #fff 100%);
+}
+
+#fp-nav ul li a span {
+  background: whitesmoke;
+}
